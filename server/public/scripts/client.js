@@ -18,6 +18,7 @@ $(document).ready(function(){
       // console.log('returned data from server: ', data);
       phirephiterArray = data.phirephiters;
       console.log(phirephiterArray.length);
+      console.log(phirephiterArray[1]);
       // init();
       // loadCarousel(phirephiterArray);
 
@@ -28,7 +29,7 @@ $(document).ready(function(){
   });
 
   addBlocksToPage();
-  highlightBlock(0);
+  // highlightBlock(0);
 
   currentPersonIndex = currentBlockIndex;
   // highlightBlock(currentBlockIndex);
@@ -84,7 +85,8 @@ function addBlocksToPage() {
   // $('#carouselBlock').empty();
   for (var i = 0; i < numberOfBlocks; i++) {
     var newCarouselBlock = $('<div>');
-    newCarouselBlock.attr('id', i);
+    // var blockNumber = i;
+    // newCarouselBlock.data(blockNumber);
     newCarouselBlock.css('background-color', 'Aqua');
     newCarouselBlock.addClass('carouselColorBlock');
     // newCarouselBlock.attr('#' + i );
@@ -92,14 +94,14 @@ function addBlocksToPage() {
   }
 }
 
-function highlightBlock(person) {
-  // var i = currentPersonIndex;
+function highlightBlock(currentBlockIndex) {
+  var i = currentBlockIndex;
   // var $blockToHighlight = '#' + i;
-  var $blockToHighlight = $('#' + person);
-  if ($blockToHighlight == person) {
+  var $blockToHighlight = $(i);
+  if ($blockToHighlight == i) {
     $blockToHighlight.addClass('active');
   } else {
-  $blockToHighlight.removeClass('active');
+  // $blockToHighlight.removeClass('active');
 }
 }
 
