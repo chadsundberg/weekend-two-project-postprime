@@ -103,6 +103,7 @@ function highlightBlock(currentBlockIndex) {
   } else {
   // $blockToHighlight.removeClass('active');
 }
+
 }
 
 // function unhighlightBlock(person) {
