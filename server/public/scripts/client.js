@@ -29,6 +29,7 @@ $(document).ready(function(){
   });
 
   addBlocksToPage();
+  
   // highlightBlock(0);
 
   currentPersonIndex = currentBlockIndex;
