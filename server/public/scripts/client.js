@@ -29,7 +29,7 @@ $(document).ready(function(){
   });
 
   addBlocksToPage();
-  
+
   // highlightBlock(0);
 
   currentPersonIndex = currentBlockIndex;
@@ -100,7 +100,7 @@ function highlightBlock(currentBlockIndex) {
   // var $blockToHighlight = '#' + i;
   var $blockToHighlight = $(i);
   if ($blockToHighlight == i) {
-    $blockToHighlight.addClass('active');
+  $blockToHighlight.addClass('active');
   } else {
   // $blockToHighlight.removeClass('active');
 }
