@@ -61,7 +61,7 @@ $(document).ready(function(){
       displayPersonAtIndex(currentPersonIndex);
     } else {
     currentPersonIndex = 17;
-    displayPersonAtIndex(currentPersonIndex);
+      displayPersonAtIndex(currentPersonIndex);
   }
   });
   // highlightBlock(currentPersonIndex);
