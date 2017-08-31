@@ -89,6 +89,8 @@ function addBlocksToPage() {
     // var blockNumber = i;
     // newCarouselBlock.data(blockNumber);
     newCarouselBlock.css('background-color', 'Aqua');
+
+
     newCarouselBlock.addClass('carouselColorBlock');
     // newCarouselBlock.attr('#' + i );
     $('#carouselBlock').append(newCarouselBlock);
