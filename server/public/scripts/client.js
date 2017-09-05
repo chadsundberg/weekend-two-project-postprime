@@ -57,6 +57,7 @@ $(document).ready(function(){
     // $('#carouselBlock').addClass(focus);
     currentPersonIndex--;
     highlightBlock(currentPersonIndex);
+    console.log(currentPersonIndex);
     if (currentPersonIndex >= 0) {
       displayPersonAtIndex(currentPersonIndex);
     } else {
