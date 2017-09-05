@@ -99,12 +99,13 @@ function addBlocksToPage() {
 function highlightBlock(currentBlockIndex) {
   var i = currentBlockIndex;
   // var $blockToHighlight = '#' + i;
+  // console.log(i);
   var $blockToHighlight = $(i);
-  if ($blockToHighlight == i) {
-  $blockToHighlight.addClass('active');
-  } else {
+  // if ($blockToHighlight == i) {
+  $blockToHighlight.addClass('.active');
+  // } else {
   // $blockToHighlight.removeClass('active');
-}
+//}
 
 }
 
