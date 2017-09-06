@@ -79,7 +79,7 @@ function displayPersonAtIndex(i) {
   $el.append('<h2>' + phirephiterArray[i].name + '</h2>');
   $el.append('<p>' + phirephiterArray[i].git_username + '</p>');
   $el.append('<p>' + phirephiterArray[i].shoutout + '</p>');
-  // highlightBlock();
+  highlightBlock();
 }
 
 
@@ -91,7 +91,7 @@ function addBlocksToPage() {
     // newCarouselBlock.data(blockNumber);
     newCarouselBlock.css('background-color', 'Aqua');
     newCarouselBlock.addClass('carouselColorBlock');
-    // newCarouselBlock.attr('#' + i );
+    newCarouselBlock.attr('#' + i);
     $('#carouselBlock').append(newCarouselBlock);
   }
 }
@@ -102,6 +102,7 @@ function highlightBlock(currentBlockIndex) {
   // console.log(i);
   var $blockToHighlight = $(i);
   // if ($blockToHighlight == i) {
+  
   $blockToHighlight.addClass('.active');
   // } else {
   // $blockToHighlight.removeClass('active');
