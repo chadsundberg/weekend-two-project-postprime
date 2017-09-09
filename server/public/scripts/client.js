@@ -44,9 +44,11 @@ $(document).ready(function(){
     console.log(currentPersonIndex);
     if (currentPersonIndex < phirephiterArray.length) {
       displayPersonAtIndex(currentPersonIndex);
+      highlightBlock(currentPersonIndex);
   } else {
     currentPersonIndex = 0;
     displayPersonAtIndex(currentPersonIndex);
+    highlightBlock(currentPersonIndex);
   }
 
   });
@@ -60,9 +62,11 @@ $(document).ready(function(){
     console.log(currentPersonIndex);
     if (currentPersonIndex >= 0) {
       displayPersonAtIndex(currentPersonIndex);
+      highlightBlock(currentPersonIndex);
     } else {
     currentPersonIndex = 17;
       displayPersonAtIndex(currentPersonIndex);
+      highlightBlock(currentPersonIndex);
   }
   });
   // highlightBlock(currentPersonIndex);
@@ -79,7 +83,7 @@ function displayPersonAtIndex(i) {
   $el.append('<h2>' + phirephiterArray[i].name + '</h2>');
   $el.append('<p>' + phirephiterArray[i].git_username + '</p>');
   $el.append('<p>' + phirephiterArray[i].shoutout + '</p>');
-  highlightBlock();
+  // highlightBlock(i);
 }
 
 
@@ -91,18 +95,22 @@ function addBlocksToPage() {
     // newCarouselBlock.data(blockNumber);
     newCarouselBlock.css('background-color', 'Aqua');
     newCarouselBlock.addClass('carouselColorBlock');
-    newCarouselBlock.attr('#' + i);
+    // newCarouselBlock.attr('#' + i);
     $('#carouselBlock').append(newCarouselBlock);
   }
 }
 
-function highlightBlock(currentBlockIndex) {
-  var i = currentBlockIndex;
+function highlightBlock(currentPersonIndex) {
+
+  for (var i = 0; i < numberOfBlocks; i++) {
+    
+  }
+  // var i = currentBlockIndex;
   // var $blockToHighlight = '#' + i;
   // console.log(i);
   var $blockToHighlight = $(i);
   // if ($blockToHighlight == i) {
-  
+
   $blockToHighlight.addClass('.active');
   // } else {
   // $blockToHighlight.removeClass('active');
